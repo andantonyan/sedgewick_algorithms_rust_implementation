@@ -1,6 +1,5 @@
-#[cfg(test)]
-mod test {
-  #[test]
-  fn it_works() {
+pub fn gcd(p: i32, q: i32) -> i32 {
+  if q == 0 { p } else {
+    gcd(q, p % q)
   }
 }

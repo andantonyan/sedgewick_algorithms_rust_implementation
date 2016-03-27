@@ -1,3 +1,5 @@
+mod lib;
+
 fn main() {
-  println!("Hello, world!");
+    println!("the greatest common divisor of 6 and 9 is {}", lib::gcd(6, 9));
 }
